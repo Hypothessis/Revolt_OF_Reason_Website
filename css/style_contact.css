@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+body
+{
+   margin: 0 auto;
+   font-family: 'Audiowide';
+
+}
+
+/* tete de page */
+
+header.heday
+{
+    display: flex;
+    align-items: center;
+    background-color:#1e1d1d;
+    border-radius: 30px;
+}
+
+header.heday img 
+{
+   width: 120px;
+   border-radius: 30px;
+}
+
+section.top-page
+{
+     background: url('../Images/The_Back.jpg');
+     background-size: cover;
+    height: 90vh;
+    padding: 25px;
+}
+
+/* page de bienvenue */
+.landing-page 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.big-title
+{
+   color: white;
+   font-size: 200 px;
+   text-align: center;
+}
+
+.scroll-down
+{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 160px;
+}
+/* menu de navigation */
+
+nav.nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 400px;
+    margin-left: 30px;
+}
+nav.nav li
+{
+   color: white;
+   text-decoration: none;
+}
+
+/* services */
+
+.services
+{
+   display: flex;
+   justify-content: space-evenly;
+   margin: 5%;
+   margin-right: 15%;
+   margin-left: 15%;
+   
+}
+
+.service-item
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.delivery-icon
+{
+    font-size: 50px;
+    color: #1e1d1d;
+}
+
+.buttons
+{
+    font-weight: 700;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: #1e1d1d;
+}
+
+.buttons:hover
+{
+    color :gray;
+    transition: all 0.4s ease;
+}
+
+/* best sells */
+
+.section-title
+{
+  font-size: 50px;
+    font-weight: 100;
+    display: block;
+    text-align: center;
+}
+
+
+.images {
+  display:inline-block;
+  padding: 5%;
+}
+.liens{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.liens:after
+ {
+    content: "";
+    position: absolute;
+    left:0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: whitesmoke;
+    transition: width .3s ease-in-out;
+  }
+
+  .liens:hover:after 
+  {
+    width: 100%;
+  }
+
+.liensMails {
+    color: white;
+    text-align: center;
+}
+
+.sendLink {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.liensMails :hover
+{
+    color :gray;
+    transition: all 0.4s ease;
+}
